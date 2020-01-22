@@ -25,4 +25,4 @@ steps:
   inputs:
     workItemType: 'Issue'
     title: 'This is a sample issue created from a pipeline'
-    assignedTo: 'shofmann444'
+    assignedTo: 'shofmann444@gmail.com'
