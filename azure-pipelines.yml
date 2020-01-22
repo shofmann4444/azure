@@ -21,7 +21,9 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
+
 - task: CreateWorkItem@1
   inputs:
     workItemType: 'Issue'
-    title: 'This is a sample issue created from a pipeline'
+    title: 'This is a sample issue created from a pipeline. now with Assigned to'
+    assignedTo: 'shofmann444 <shofmann444@gmail.com>'
