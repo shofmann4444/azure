@@ -24,7 +24,7 @@ steps:
 
 - task: CreateWorkItem@1
   inputs:
-    teamProject: 'ScottsFirstProject'
+    teamProject: 'shofmann444/ScottsFirstProject'
     workItemType: 'Issue'
-    title: 'This is a sample issue created from a pipeline. now with Assigned to'
+    title: 'added team project. This is a sample issue created from a pipeline. now with Assigned to'
     assignedTo: 'shofmann444 <shofmann444@gmail.com>'
