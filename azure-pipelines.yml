@@ -25,9 +25,9 @@ steps:
 - task: CreateWorkItem@1
   inputs:
     areaPath: 'ScottsFirstProject\ACM'
-    workItemType: 'Issue'
+    workItemType: 'ACM'
     title: 'test write to ACM area'
-    assignedTo: 'shofmann444 <shofmann444@gmail.com>'
+
 
 
 - task: CreateWorkItem@1
