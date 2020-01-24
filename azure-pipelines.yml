@@ -24,7 +24,15 @@ steps:
 
 - task: CreateWorkItem@1
   inputs:
-    teamProject: 'M_ACMs'
+    areaPath: 'ScottsFirstProject\ACM'
     workItemType: 'Issue'
-    title: 'added team project. This is a sample issue created from a pipeline. now with Assigned to'
+    title: 'test write to ACM area'
+    assignedTo: 'shofmann444 <shofmann444@gmail.com>'
+
+
+- task: CreateWorkItem@1
+  inputs:
+    areaPath: 'ScottsFirstProject\log'
+    workItemType: 'Issue'
+    title: 'test write to log area'
     assignedTo: 'shofmann444 <shofmann444@gmail.com>'
