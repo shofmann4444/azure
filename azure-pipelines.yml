@@ -32,7 +32,7 @@ steps:
 
 - task: CreateWorkItem@1
   inputs:
-    areaPath: 'ScottsFirstProject\log'
+    areaPath: 'ScottsFirstProject\Log'
     workItemType: 'Issue'
-    title: 'test write to log area'
+    title: 'test write to Log area'
     assignedTo: 'shofmann444 <shofmann444@gmail.com>'
