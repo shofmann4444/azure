@@ -29,10 +29,8 @@ steps:
     title: 'test write to ACM area'
 
 
-
 - task: CreateWorkItem@1
   inputs:
-    areaPath: 'ScottsFirstProject\Log'
-    workItemType: 'Issue'
+    areaPath: 'ScottsFirstProject\ACMLog'
+    workItemType: 'Log'
     title: 'test write to Log area'
-    assignedTo: 'shofmann444 <shofmann444@gmail.com>'
