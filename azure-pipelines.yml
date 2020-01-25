@@ -27,10 +27,24 @@ steps:
     areaPath: 'ScottsFirstProject\ACM'
     workItemType: 'ACM'
     title: 'test write ACM type to ACM area'
-
+    fieldMappings: |
+     Description=Created by build $(Build.DefinitionName)-$(Build.BuildNumber)
+    preventDuplicates: true
+    keyFields: |
+     Title
+     Area Path
+     Activity Date
 
 - task: CreateWorkItem@1
   inputs:
-    areaPath: 'ScottsFirstProject\ACMLog'
+    areaPath: 'ScottsFirstProject\Log'
     workItemType: 'Log'
     title: 'test write to Log area - Log type in ACMLog'
+    fieldMappings: |
+     Description=Created by build $(Build.DefinitionName)-$(Build.BuildNumber)
+    preventDuplicates: true
+    keyFields: |
+     Title
+     Area Path
+     Activity Date
+
