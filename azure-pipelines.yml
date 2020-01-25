@@ -32,6 +32,7 @@ steps:
     preventDuplicates: true
     keyFields: |
      Description
+     Title
 
 
 - task: CreateWorkItem@1
@@ -43,5 +44,5 @@ steps:
      Description=Created by build $(Build.DefinitionName)-$(Build.BuildNumber)
     preventDuplicates: true
     keyFields: |
-     Title 
      Description
+     Title
