@@ -26,11 +26,11 @@ steps:
   inputs:
     areaPath: 'ScottsFirstProject\ACM'
     workItemType: 'ACM'
-    title: 'test write to ACM area'
+    title: 'test write ACM type to ACM area'
 
 
 - task: CreateWorkItem@1
   inputs:
     areaPath: 'ScottsFirstProject\ACMLog'
     workItemType: 'Log'
-    title: 'test write to Log area'
+    title: 'test write to Log area - Log type in ACMLog'
