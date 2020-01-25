@@ -26,12 +26,11 @@ steps:
   inputs:
     areaPath: 'ScottsFirstProject\ACM'
     workItemType: 'ACM'
-    title: 'test write ACM type to ACM area'
+    title: 'ACM for '$(Build.DefinitionName)
     fieldMappings: |
      Description=Created by build $(Build.DefinitionName)-$(Build.BuildNumber)
     preventDuplicates: true
     keyFields: |
-     Description
      Title
 
 
@@ -39,10 +38,9 @@ steps:
   inputs:
     areaPath: 'ScottsFirstProject\Log'
     workItemType: 'Log'
-    title: 'test write to Log area - Log type in ACMLog'
+    title: 'Log Entry '
     fieldMappings: |
      Description=Created by build $(Build.DefinitionName)-$(Build.BuildNumber)
     preventDuplicates: true
     keyFields: |
-     Description
      Title
