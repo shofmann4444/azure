@@ -29,9 +29,10 @@ steps:
     title: 'ACM for $(Build.DefinitionName)-$(Build.BuildNumber)'
     fieldMappings: |
      Description=Created by build $(Build.DefinitionName)-$(Build.BuildNumber)
+     Root Cause=Unique Value used for Preventing Duplicates $(Date:yyyyMMdd) 
     preventDuplicates: true
     keyFields: |
-     Title
+     Root Cause
 
 
 - task: CreateWorkItem@1
@@ -41,6 +42,7 @@ steps:
     title: '$(Build.BuildNumber)-$(Build.DefinitionName): Log Entry'
     fieldMappings: |
      Description=Created by build $(Build.DefinitionName)-$(Build.BuildNumber)
+     Root Cause=Unique Value used for Preventing Duplicates $(Date:yyyyMMdd)
     preventDuplicates: true
     keyFields: |
-     Title
+     Root Cause
