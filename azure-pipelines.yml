@@ -26,7 +26,7 @@ steps:
   inputs:
     areaPath: 'ScottsFirstProject\ACM'
     workItemType: 'ACM'
-    title: 'ACM for $(Build.DefinitionName)-$(Build.BuildNumber) - $(Build.BuildId)'
+    title: 'ACM for $(Build.DefinitionName)-$(Build.BuildNumber)'
     fieldMappings: |
      Description=Created by build $(Build.DefinitionName)-$(Build.BuildNumber)
     preventDuplicates: true
@@ -38,7 +38,7 @@ steps:
   inputs:
     areaPath: 'ScottsFirstProject\Log'
     workItemType: 'Log'
-    title: '$(Date:yyyyMMdd) - $(Build.DefinitionName): Log Entry'
+    title: '$(Build.BuildNumber)-$(Build.DefinitionName): Log Entry'
     fieldMappings: |
      Description=Created by build $(Build.DefinitionName)-$(Build.BuildNumber)
     preventDuplicates: true
