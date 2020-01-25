@@ -32,7 +32,7 @@ steps:
     preventDuplicates: true
     keyFields: |
      Description
-     Activity Date
+
 
 - task: CreateWorkItem@1
   inputs:
@@ -44,4 +44,3 @@ steps:
     preventDuplicates: true
     keyFields: |
      Description
-     Activity Date
