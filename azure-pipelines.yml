@@ -29,11 +29,6 @@ steps:
     title: 'test write ACM type to ACM area'
     fieldMappings: |
      Description=Created by build $(Build.DefinitionName)-$(Build.BuildNumber)
-    preventDuplicates: true
-    keyFields: |
-     Title
-     Area Path
-     Activity Date
 
 - task: CreateWorkItem@1
   inputs:
