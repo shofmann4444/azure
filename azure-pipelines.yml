@@ -38,7 +38,7 @@ steps:
   inputs:
     areaPath: 'ScottsFirstProject\Log'
     workItemType: 'Log'
-    title: 'Log Entry '
+    title: '$(Date:yyyyMMdd) - $(Build.DefinitionName): Log Entry'
     fieldMappings: |
      Description=Created by build $(Build.DefinitionName)-$(Build.BuildNumber)
     preventDuplicates: true
