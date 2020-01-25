@@ -31,6 +31,6 @@ steps:
 
 - task: CreateWorkItem@1
   inputs:
-    areaPath: 'ScottsFirstProject\ACMLog'
+    areaPath: 'ScottsFirstProject\Log'
     workItemType: 'Log'
     title: 'test write to Log area - Log type in ACMLog'
