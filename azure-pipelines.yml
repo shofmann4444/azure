@@ -31,7 +31,6 @@ steps:
      Description=Created by build $(Build.DefinitionName)-$(Build.BuildNumber)
     preventDuplicates: true
     keyFields: |
-     title 
      Description
 
 
@@ -44,5 +43,5 @@ steps:
      Description=Created by build $(Build.DefinitionName)-$(Build.BuildNumber)
     preventDuplicates: true
     keyFields: |
-     title 
+     Title 
      Description
