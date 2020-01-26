@@ -29,7 +29,7 @@ steps:
     title: 'ACM for $(Build.DefinitionName)-$(Build.BuildNumber)'
     fieldMappings: |
      Description=Created by build $(Build.DefinitionName)-$(Build.BuildNumber)
-     Root Cause=Unique Value used for Preventing Duplicates $(Date:yyyyMMdd) 
+     Root Cause=Unique Value used for Preventing Duplicates 
     preventDuplicates: true
     keyFields: |
      Root Cause
